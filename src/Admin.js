@@ -41,14 +41,15 @@ const createEntry = (name, email) => {
 }
 
 
-
-refresh.addEventListener("click", () => {
+refresh.addEventListener("click", (e) => {
     getData();
 })
 
-refresh.addEventListener("dblclick", () => {
-    return false
+refresh.addEventListener("dblclick", (e) => {
+    location.reload();
 })
+
+
 
 let counter = 0;
 
@@ -66,7 +67,10 @@ function getData (){
             createEntry(doc.data().name,doc.data().email)
             //console.log(counter)
             numberOfEmails.innerText = counter
+            
         });
+
+        
     });
 }
 

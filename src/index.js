@@ -29,11 +29,11 @@ getStartedBtn.addEventListener("click", e =>{
      `<form action="#" id="form">
     <div class="userName">
         <label for="name">Name:</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" required>
     </div>
     <div class="userEmail">
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" required>
     </div>
    
     <button type="submit">Submit</button>

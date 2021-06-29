@@ -387,6 +387,11 @@ nav ul li a{
 .socials a img{
     height: 50px;
     width: 50px;
+    transition: 0.3s;
+}
+
+.socials a img:hover{
+    transform: translateY(-5px);
 }
 
 footer{
