@@ -54,7 +54,10 @@ let counter = 0;
 
 function getData (){
     counter = 0;
-    table.innerHTML = " "
+    table.innerHTML = `<tr>
+    <th>Name</th>
+    <th>Email</th>
+</tr>`
     db.collection("Entries").get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             // doc.data() is never undefined for query doc snapshots
