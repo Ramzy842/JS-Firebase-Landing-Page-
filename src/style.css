@@ -322,6 +322,7 @@ nav ul li a{
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .feature img{
